@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Table</title>
+</head>
+
+<body>
+    <div>
+    <table>
+        <th colspan="8" style="font-size: 1.7rem; padding: 8px;background-color: rgb(255, 196, 86);">TIME TABLE</th>
+        <tr class="size" id="hide">
+            <th>DATE / TIME</th>
+            <th>09.00 A.M. To 09.50 A.M.</th>
+            <th>09.50 A.M. To 10.40 A.M.</th>
+            <th>10.55 A.M. To 11.40 A.M.</th>
+            <th>11.40 A.M. To 12.30 A.M.</th>
+            <th>01.30 A.M. To 02.20 A.M.</th>
+            <th>02.20 A.M. To 03.10 A.M.</th>
+            <th>03.10 A.M. To 04.00 A.M.</th>
+        </tr>
+        <tr class="clr1">
+            <th class="size">MON</th>
+            <td>CT/HSN/BI</td>
+            <td>GM</td>
+            <td>BD&CC</td>
+            <td>PE</td>
+            <td>BD&CC</td>
+            <td>SSD/LIB</td>
+            <td>GM</td>
+        </tr>
+        <tr class="clr3">
+            <th class="size">TUE</th>
+            <td>CT/C&NS</td>
+            <td>PE</td>
+            <td>HSN/BI</td>
+            <td>BD&CC</td>
+            <td>HSN/BI</td>
+            <td colspan="2">BD&CSS/GM LAB</td>
+        </tr>
+        <tr class="clr1">
+            <th class="size">WED</th>
+            <td>CT/GM</td>
+            <td>HSN/BI</td>
+            <td>C&NS/HH</td>
+            <td>BD&CC</td>
+            <td>GM</td>
+            <td>PE</td>
+            <td>C&NS</td>
+        </tr>
+        <tr class="clr3">
+            <th class="size">THU</th>
+            <td>CT/PE</td>
+            <td>HSN/BI</td>
+            <td colspan="2">BD&CC/GM LAB</td>
+            <td colspan="3">PRIEE</td>
+        </tr>
+        <tr class="clr1">
+            <th class="size">FRI</th>
+            <td>CT/BD&CC</td>
+            <td>GM</td>
+            <td colspan="2">PRIEE</td>
+            <td>C&NS</td>
+            <td>PE</td>
+            <td>C&NS</td>
+        </tr>
+    </table>
+</div>
+</body>
+<style>
+    div {
+        margin: auto;
+        display: grid;
+        place-items: center;
+        width: 100vw;
+        height: 100vh;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    table,
+    tr,
+    th,
+    td {
+        border-collapse: collapse;
+        border: 2px solid #000000;
+        text-align: center;
+        padding: 5px;
+    }
+
+    table {
+        width: 80%;
+    }
+    .size{
+        font-size: 1rem;
+    }
+    .clr1{
+        background-color: rgb(183, 233, 253);
+        color: black;
+        font-weight: 600;
+    }
+    .clr2{
+        background-color: rgb(52, 54, 54);
+        color: whitesmoke;
+    }
+    .size{
+        font-size: 1.1rem;
+        font-weight: 800;
+        background-color: rgb(247, 226, 188);
+    }
+    @media (max-width :970px) {
+        div{
+            display: flow-root;
+            transform: translateY(25%);
+        }
+        body{
+            overflow-y: hidden;
+        }
+        table{
+            width: 98%;
+            overflow-x:auto;
+        }
+    }
+    @media (max-width :745px) {
+        th, td,tr{
+            display: block;
+            
+        }
+        .clr1{
+            margin-left: 0;
+        }
+        #hide{
+            display: none;
+        }
+        div{
+            transform: translateY(0%);
+            transform: translateX(5%);
+            width: 50%;
+        }
+        body{
+            overflow-y: visible;
+            margin: auto;
+        }
+        .size{
+            background-color: rgb(183, 233, 253);
+        }
+        .clr1,.clr3{
+            background-color: whitesmoke;
+        }
+    }
+    @media (max-width :600px) {
+        div{
+            width: 60%;
+        }
+    }
+    @media (max-width :570px) {
+        div{
+            width: 70%;
+        }
+    }
+    @media (max-width :470px) {
+        div{
+            width: 80%;
+        }
+    }
+    @media (max-width :370px) {
+        div{
+            width: 97%;
+        }
+    }
+
+</style>
+
+</html>
